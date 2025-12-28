@@ -3,43 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vitality74 - The science-backed men's performance training app. Build stamina, track progress, and optimize your vitality with personalized protocols.">
-    <meta name="keywords" content="men's health, stamina training, kegel exercises, performance, vitality">
-    <meta name="author" content="Vitality74">
+    <meta name="description" content="Vitality 74 - Data-driven male performance optimization. The first biological protocol tracker aligned with your 74-day regeneration cycle.">
+    <meta name="keywords" content="male performance, stamina, vitality, biohacking, testosterone, kegel, spermatogenesis">
+    <meta name="author" content="Vitality 74">
+    <meta name="theme-color" content="#09090B">
 
-    <!-- Open Graph / Social -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Vitality74 - Men's Performance Training">
-    <meta property="og:description" content="Science-backed training protocols for men's stamina and vitality.">
+    <meta property="og:title" content="Vitality 74 - Data-Driven Male Performance">
+    <meta property="og:description" content="The first biological protocol tracker aligned with your 74-day regeneration cycle. 100% Private.">
     <meta property="og:image" content="assets/og-image.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vitality74 - Men's Performance Training">
-    <meta name="twitter:description" content="Science-backed training protocols for men's stamina and vitality.">
+    <meta name="twitter:title" content="Vitality 74 - Data-Driven Male Performance">
+    <meta name="twitter:description" content="Optimize stamina using food, movement, and on-device intelligence.">
 
-    <title>Vitality74 - Men's Performance Training App</title>
+    <title>Vitality 74 - Data-Driven Male Performance</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Particle Background -->
+    <div class="particle-field" id="particles"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="/" class="logo">
-                <span class="logo-icon">V</span>
-                <span class="logo-text">Vitality74</span>
+                <div class="logo-mark">
+                    <span class="logo-number">74</span>
+                </div>
+                <span class="logo-text">VITALITY</span>
             </a>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="support.html">Support</a>
-                <a href="#download" class="btn btn-primary btn-sm">Download</a>
+                <a href="#science">The Science</a>
+                <a href="#protocol">The Protocol</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#pricing" class="btn btn-primary btn-nav">Get Access</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span>
@@ -52,223 +59,523 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Science-Backed Training
-                </div>
-                <h1>Master Your <span class="gradient-text">Stamina</span></h1>
+            <div class="hero-content" data-animate>
+                <h1 class="hero-title">
+                    Data-Driven Male Performance.<br>
+                    <span class="text-gradient">100% Private.</span>
+                </h1>
                 <p class="hero-subtitle">
-                    The discrete, personalized training app for men who want to take control
-                    of their performance. Build lasting stamina with proven protocols.
+                    The first biological protocol tracker that aligns with your 74-day
+                    regeneration cycle. Optimize stamina using food, movement, and
+                    on-device intelligence.
                 </p>
                 <div class="hero-cta">
-                    <a href="#download" class="btn btn-primary btn-lg">
+                    <a href="#pricing" class="btn btn-primary btn-lg btn-glow">
+                        Start Your 74-Day Protocol
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7,10 12,15 17,10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
-                        Download Free
                     </a>
-                    <a href="#how-it-works" class="btn btn-secondary btn-lg">Learn More</a>
+                    <p class="hero-cta-sub">Available on iOS & Android. One-time purchase available.</p>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-value">10K+</span>
-                        <span class="stat-label">Active Users</span>
+            </div>
+            <div class="hero-visual" data-animate data-delay="200">
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <img src="assets/home-dashboard.png" alt="Vitality 74 Dashboard" class="screen-image">
                     </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-value">4.8</span>
-                        <span class="stat-label">App Rating</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-value">74%</span>
-                        <span class="stat-label">See Results</span>
+                </div>
+                <div class="hero-glow"></div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Science Section -->
+    <section id="science" class="section section-science">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-kicker">THE BIOLOGICAL REALITY</span>
+                <h2 class="section-title">
+                    Stop treating symptoms.<br>
+                    <span class="text-gradient">Reset the system.</span>
+                </h2>
+                <p class="section-desc">
+                    Quick pills and "tricks" are temporary. True physiological change takes time.
+                    Your body requires approximately <strong>74 days</strong> to complete a full cycle of
+                    spermatogenesis—regenerating from scratch under new biological conditions.
+                </p>
+            </div>
+            <div class="cycle-visual" data-animate data-delay="200">
+                <div class="">
+                    <!-- <div class="cycle-progress"></div> -->
+                    <div class="cycle-markers">
+                        <div class="marker" data-day="1">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Day 1</span>
+                            <span class="marker-text">Protocol Begins</span>
+                        </div>
+                        <div class="marker" data-day="21">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Day 21</span>
+                            <span class="marker-text">Habits Forming</span>
+                        </div>
+                        <div class="marker" data-day="45">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Day 45</span>
+                            <span class="marker-text">Cellular Renewal</span>
+                        </div>
+                        <div class="marker active" data-day="74">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Day 74</span>
+                            <span class="marker-text">Full Regeneration</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="app-preview">
-                            <div class="preview-header">
-                                <span class="preview-label">GYM PROTOCOL</span>
-                                <span class="preview-title">Foundation</span>
+        </div>
+    </section>
+
+    <!-- Protocol Section -->
+    <section id="protocol" class="section section-protocol">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-kicker">THE PROTOCOL</span>
+                <h2 class="section-title">
+                    Two pillars.<br>
+                    <span class="text-gradient">One system.</span>
+                </h2>
+            </div>
+
+            <!-- Fuel Block -->
+            <div class="protocol-block" data-animate>
+                <div class="protocol-content">
+                    <span class="protocol-number">01</span>
+                    <h3 class="protocol-title">Precision Nutrition Loading</h3>
+                    <p class="protocol-desc">
+                        Track the specific micronutrients (Zinc, Magnesium, L-Citrulline) proven to
+                        support testosterone synthesis and blood flow. No guesswork. Just daily targets.
+                    </p>
+                    <ul class="protocol-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Swipe-to-log food tracking
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Real-time nutrient calculations
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Bio-availability optimization
+                        </li>
+                    </ul>
+                </div>
+                <div class="protocol-visual">
+                    <div class="phone-mockup phone-mockup-sm">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <img src="assets/fuel.png" alt="Fuel Protocol Screen" class="screen-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Block -->
+            <div class="protocol-block protocol-block-reverse" data-animate>
+                <div class="protocol-content">
+                    <span class="protocol-number">02</span>
+                    <h3 class="protocol-title">Beyond the Basic Kegel</h3>
+                    <p class="protocol-desc">
+                        Strength is nothing without control. Our haptic-guided training teaches you
+                        "Down-Training" (Reverse Kegels)—the secret to regulating the ejaculatory reflex.
+                    </p>
+                    <ul class="protocol-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Visual biofeedback breathing orb
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Haptic-guided squeeze/relax cycles
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Progressive difficulty protocols
+                        </li>
+                    </ul>
+                </div>
+                <div class="protocol-visual">
+                    <div class="phone-mockup phone-mockup-sm">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <img src="assets/gym-protocol.png" alt="Gym Protocol Screen" class="screen-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="section section-privacy">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-kicker">ZERO-KNOWLEDGE ARCHITECTURE</span>
+                <h2 class="section-title">
+                    Your Biology. Your Data.<br>
+                    <span class="text-gradient">Your Device.</span>
+                </h2>
+                <p class="section-desc">
+                    Vitality 74 operates on a "Zero-Knowledge" architecture.<br>
+                    We don't know who you are, and we don't want to.
+                </p>
+            </div>
+            <div class="privacy-grid" data-animate data-delay="200">
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 7V4h16v3"/>
+                            <path d="M9 20h6"/>
+                            <path d="M12 4v16"/>
+                            <rect x="6" y="8" width="12" height="8" rx="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="privacy-title">The Local Vault</h3>
+                    <p class="privacy-desc">
+                        Unlike other health apps, we do not have a central database. Your logs and biometric trends live exclusively on your phone's physical storage. Delete the app, and that data ceases to exist.
+                    </p>
+                </div>
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            <circle cx="12" cy="16" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="privacy-title">SQLCipher Encryption</h3>
+                    <p class="privacy-desc">
+                        Your local database is encrypted at rest using 256-bit AES encryption. Even if your phone is physically stolen, your data appears as unreadable noise without the key stored in your device's Secure Enclave.
+                    </p>
+                </div>
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <path d="M9 9h6v6H9z"/>
+                            <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
+                        </svg>
+                    </div>
+                    <h3 class="privacy-title">Edge Computing AI</h3>
+                    <p class="privacy-desc">
+                        Our AI analysis engine runs purely on your device's processor. Your data is never sent to the cloud for processing. The insights are generated in your pocket, not on a server farm.
+                    </p>
+                </div>
+                <div class="privacy-card">
+                    <div class="privacy-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="privacy-title">Anonymous Transactions</h3>
+                    <p class="privacy-desc">
+                        We use Apple/Google's secure payment infrastructure. Vitality 74 validates your Lifetime License using an anonymous token. We never see your credit card details or real name.
+                    </p>
+                </div>
+            </div>
+            <div class="privacy-cta" data-animate data-delay="300">
+                <a href="privacy.html" class="btn-text">
+                    Read our full Privacy Policy
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="section section-analytics">
+        <div class="container">
+            <div class="analytics-block" data-animate>
+                <div class="analytics-content">
+                    <span class="section-kicker">BIO-ANALYTICS</span>
+                    <h2 class="section-title">
+                        <span class="text-gradient">Invisible</span> Intelligence.
+                    </h2>
+                    <p class="section-desc">
+                        Vitality 74 quietly analyzes the correlation between your inputs (diet/training)
+                        and your outputs (morning readiness) to find your personal performance patterns.
+                    </p>
+                </div>
+                <div class="analytics-visual">
+                    <div class="insight-card">
+                        <div class="insight-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                            <span>Pattern Detected</span>
+                        </div>
+                        <p class="insight-text">
+                            Zinc loading correlates to <strong class="text-gradient">+30% morning readiness</strong> in your data.
+                        </p>
+                        <div class="insight-chart">
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="--height: 40%"></div>
+                                <div class="chart-bar" style="--height: 55%"></div>
+                                <div class="chart-bar" style="--height: 45%"></div>
+                                <div class="chart-bar" style="--height: 70%"></div>
+                                <div class="chart-bar" style="--height: 85%"></div>
+                                <div class="chart-bar active" style="--height: 95%"></div>
+                                <div class="chart-bar" style="--height: 90%"></div>
                             </div>
-                            <div class="preview-circle"></div>
-                            <div class="preview-stats">
-                                <div class="preview-stat">
-                                    <span class="preview-stat-value">3/3</span>
-                                    <span class="preview-stat-label">SESSIONS</span>
-                                </div>
+                            <div class="chart-labels">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="glow-effect"></div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Pricing Section -->
+    <section id="pricing" class="section section-pricing">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">FEATURES</span>
-                <h2>Everything You Need to <span class="gradient-text">Succeed</span></h2>
-                <p>A complete system designed for real results, not gimmicks.</p>
+            <div class="section-header" data-animate>
+                <span class="section-kicker">PRICING</span>
+                <h2 class="section-title">
+                    Own Your <span class="text-gradient">Biology.</span>
+                </h2>
+                <p class="section-desc">
+                    Simple, transparent pricing. No hidden subscription traps.
+                </p>
             </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon" style="--accent: #F97316;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                        </svg>
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card pricing-card-free" data-animate data-delay="200">
+                    <div class="pricing-badge pricing-badge-free">FREE FOREVER</div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">0</span>
                     </div>
-                    <h3>Guided Training</h3>
-                    <p>Follow along with visual and haptic cues. Our biofeedback system guides every rep for perfect form.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="--accent: #06B6D4;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 3v18h18"/>
-                            <path d="M18 17V9"/>
-                            <path d="M13 17V5"/>
-                            <path d="M8 17v-3"/>
-                        </svg>
-                    </div>
-                    <h3>Progress Tracking</h3>
-                    <p>Visualize your journey with detailed analytics. Track sessions, streaks, and performance trends over time.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="--accent: #8B5CF6;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 20V10"/>
-                            <path d="M18 20V4"/>
-                            <path d="M6 20v-4"/>
-                        </svg>
-                    </div>
-                    <h3>Adaptive Protocols</h3>
-                    <p>Three progressive modes - Foundation, Stamina, and Strength - that adapt to your experience level.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="--accent: #22C55E;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
-                    </div>
-                    <h3>Daily Reminders</h3>
-                    <p>Smart notifications that fit your schedule. Morning and evening reminders keep you consistent.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="--accent: #EC4899;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        </svg>
-                    </div>
-                    <h3>Nutrition Guidance</h3>
-                    <p>Track stamina-boosting foods and hydration. Science-backed nutrition protocols enhance your results.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon" style="--accent: #F59E0B;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3>100% Private</h3>
-                    <p>All data stays on your device. No accounts required, no cloud uploads. Your journey is yours alone.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">HOW IT WORKS</span>
-                <h2>Simple. Effective. <span class="gradient-text">Private.</span></h2>
-                <p>Get started in under 2 minutes. No signup required.</p>
-            </div>
-
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3>Complete Onboarding</h3>
-                        <p>Answer a few questions about your goals and experience. We'll create a personalized 12-week plan.</p>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3>Learn the Technique</h3>
-                        <p>Our calibration wizard teaches you proper form with the "elevator" method for maximum effectiveness.</p>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3>Train Daily</h3>
-                        <p>Follow guided sessions with visual and haptic feedback. Just 5-10 minutes a day builds real results.</p>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Track Progress</h3>
-                        <p>Log performance metrics and watch your stamina scores improve week over week.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download">
-        <div class="container">
-            <div class="download-card">
-                <div class="download-content">
-                    <h2>Ready to Take Control?</h2>
-                    <p>Download Vitality74 free and start your journey to better stamina today.</p>
-                    <div class="store-buttons">
-                        <a href="#" class="store-btn">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                    <p class="pricing-type">No credit card required</p>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            7-Day Journey Preview
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Basic Training Mode
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Daily Progress Tracking
+                        </li>
+                        <li class="feature-disabled">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            Advanced Kegel Modes
+                        </li>
+                        <li class="feature-disabled">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            Bio-Analytics & Insights
+                        </li>
+                    </ul>
+                    <div class="pricing-stores">
+                        <a href="#" class="store-badge">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                             </svg>
-                            <div class="store-text">
-                                <span class="store-label">Download on the</span>
-                                <span class="store-name">App Store</span>
-                            </div>
+                            App Store
                         </a>
-                        <a href="#" class="store-btn">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <a href="#" class="store-badge">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                 <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                             </svg>
-                            <div class="store-text">
-                                <span class="store-label">Get it on</span>
-                                <span class="store-name">Google Play</span>
-                            </div>
+                            Google Play
                         </a>
                     </div>
                 </div>
-                <div class="download-decoration">
-                    <div class="decoration-circle"></div>
-                    <div class="decoration-circle"></div>
-                    <div class="decoration-circle"></div>
+
+                <!-- Pro Tier -->
+                <div class="pricing-card pricing-card-pro" data-animate data-delay="300">
+                    <div class="pricing-badge">LIFETIME ACCESS</div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">19</span>
+                        <span class="price-decimal">.99</span>
+                    </div>
+                    <p class="pricing-type">One-time payment</p>
+                    <p class="pricing-compare"><s>$5.99/month subscription</s></p>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Full 74-Day Journey Tracking
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Unlimited Bio-Analytics & Insights
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            All Advanced Haptic Modes
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            Lifetime Updates & Data Export
+                        </li>
+                    </ul>
+                    <div class="pricing-stores">
+                        <a href="#" class="store-badge">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                            </svg>
+                            App Store
+                        </a>
+                        <a href="#" class="store-badge">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                            </svg>
+                            Google Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-faq">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-kicker">QUESTIONS</span>
+                <h2 class="section-title">
+                    Frequently <span class="text-gradient">Asked</span>
+                </h2>
+            </div>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the 74-day cycle?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The 74-day cycle refers to spermatogenesis - the complete biological process where your body generates new reproductive cells from scratch. This is the foundation of our protocol. Unlike quick-fix approaches, we align your nutrition and training with this natural regeneration timeline for lasting physiological change.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is my data private?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Vitality 74 uses a Zero-Trust Architecture - all your personal health and training data is stored locally on your device using encrypted SQLite. We have no servers, no accounts, no cloud storage. Your biometric data never leaves your phone. Period.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How often should I train?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend 2-3 short sessions per day, each lasting 5-10 minutes. The app provides haptic-guided exercises with visual biofeedback. Consistency matters more than intensity - daily practice builds the neuromuscular control needed for real improvement.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes this different from other Kegel apps?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Three things: (1) We teach Down-Training (Reverse Kegels) - the overlooked skill that gives you conscious control over the ejaculatory reflex. (2) We combine pelvic training with targeted nutrition loading for synergistic effects. (3) Our bio-analytics engine finds correlations between your inputs and outputs that are unique to your physiology.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long until I see results?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most users report noticeable improvements in control within 3-4 weeks of consistent training. The full 74-day protocol is designed to complete one full regeneration cycle, giving your body time to adapt at the cellular level. The app tracks your progress with objective metrics so you can see your improvement over time.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I use the app discreetly?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Stealth Mode displays a black screen during training and uses haptic vibrations to guide your exercises silently. You can train at your desk, during meetings, or anywhere else without anyone knowing. The app icon and name are also designed to be inconspicuous.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is this a subscription?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. Vitality 74 is a one-time purchase of $19.99 for lifetime access. No recurring fees, no in-app purchases, no paywalled features. You get the complete protocol, all training modes, unlimited analytics, and all future updates included.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,37 +584,28 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-content">
                 <div class="footer-brand">
                     <a href="/" class="logo">
-                        <span class="logo-icon">V</span>
-                        <span class="logo-text">Vitality74</span>
+                        <div class="logo-mark">
+                            <span class="logo-number">74</span>
+                        </div>
+                        <span class="logo-text">VITALITY</span>
                     </a>
-                    <p>Science-backed training for men's performance and stamina.</p>
+                    <p class="footer-tagline">Made privately.</p>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#how-it-works">How It Works</a>
-                        <a href="#download">Download</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="support.html">Help Center</a>
-                        <a href="support.html#contact">Contact Us</a>
-                        <a href="support.html#faq">FAQ</a>
-                    </div>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="support.html">Support</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Vitality74. All rights reserved.</p>
-                <p class="footer-disclaimer">This app is for educational and wellness purposes only. Consult a healthcare provider for medical advice.</p>
+                <p>&copy; 2025 Vitality 74. All rights reserved.</p>
+                <p class="footer-disclaimer">
+                    This app is for educational and wellness purposes only.
+                    Consult a healthcare provider for medical advice.
+                </p>
             </div>
         </div>
     </footer>

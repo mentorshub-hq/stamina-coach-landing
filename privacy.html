@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vitality74 Privacy Policy - Learn how we protect your data and privacy.">
-    <title>Privacy Policy - Vitality74</title>
+    <meta name="description" content="Vitality74 Privacy Policy - Zero-Knowledge Architecture. Your data never leaves your device.">
+    <title>Privacy Policy - Vitality 74</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="/" class="logo">
-                <span class="logo-icon">V</span>
-                <span class="logo-text">Vitality74</span>
+                <div class="logo-mark">
+                    <span class="logo-number">74</span>
+                </div>
+                <span class="logo-text">VITALITY</span>
             </a>
             <div class="nav-links">
-                <a href="index.html#features">Features</a>
-                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#science">Science</a>
+                <a href="index.html#protocol">Protocol</a>
+                <a href="index.html#privacy">Privacy</a>
                 <a href="support.html">Support</a>
-                <a href="index.html#download" class="btn btn-primary btn-sm">Download</a>
+                <a href="index.html#pricing" class="btn btn-primary btn-nav">Get Access</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span>
@@ -34,127 +37,280 @@
     </nav>
 
     <!-- Privacy Policy Content -->
-    <section class="legal-page">
+    <section class="privacy-page">
         <div class="container">
-            <h1>Privacy Policy</h1>
-            <p class="legal-date">Last updated: January 2025</p>
+            <!-- Promise Card -->
+            <div class="promise-card">
+                <div class="promise-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                </div>
+                <h2 class="promise-title">Our Promise</h2>
+                <div class="promise-stats">
+                    <div class="promise-stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Servers</span>
+                    </div>
+                    <div class="promise-divider"></div>
+                    <div class="promise-stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Trackers</span>
+                    </div>
+                    <div class="promise-divider"></div>
+                    <div class="promise-stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Private</span>
+                    </div>
+                </div>
+            </div>
 
-            <div class="legal-content">
-                <p>
-                    At Vitality74, we take your privacy seriously. This Privacy Policy explains how we collect,
-                    use, and protect your information when you use our mobile application ("App").
-                </p>
+            <!-- Page Header -->
+            <div class="privacy-header">
+                <h1>Privacy <span class="text-gradient">Policy</span></h1>
+                <p class="privacy-date">Last Updated: January 2025</p>
+            </div>
 
-                <h2>1. Information We Collect</h2>
-
-                <h3>1.1 Information You Provide</h3>
-                <p>When you use Vitality74, you may provide the following information:</p>
-                <ul>
-                    <li>Profile information (age range, fitness level, goals)</li>
-                    <li>Training session data (workout completion, duration, performance ratings)</li>
-                    <li>Nutrition tracking data (food logs, hydration)</li>
-                    <li>Health-related self-assessments</li>
+            <!-- Plain English Summary -->
+            <div class="summary-section">
+                <div class="summary-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <h2>The "Plain English" Summary</h2>
+                </div>
+                <p class="summary-intro">We believe you shouldn't need a law degree to understand where your intimate data goes.</p>
+                <ul class="summary-list">
+                    <li>
+                        <span class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </span>
+                        <span><strong>We do not have servers.</strong> We cannot see your data even if we wanted to.</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </span>
+                        <span><strong>Everything is local.</strong> Your logs stay on your device.</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </span>
+                        <span><strong>You hold the keys.</strong> Your database is encrypted.</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </span>
+                        <span><strong>We don't sell data.</strong> Because we don't <em>have</em> your data.</span>
+                    </li>
                 </ul>
+            </div>
 
-                <h3>1.2 Automatically Collected Information</h3>
-                <p>We may automatically collect:</p>
-                <ul>
-                    <li>Device information (device type, operating system version)</li>
-                    <li>App usage statistics (features used, session frequency)</li>
-                    <li>Crash reports and performance data</li>
-                </ul>
+            <!-- Legal Sections (Accordion) -->
+            <div class="legal-sections">
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">1</span>
+                            <span class="accordion-title">Data Storage Architecture</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Vitality 74 utilizes a <strong>Local-First Architecture</strong>.</p>
+                        <p>All user-generated content, including but not limited to:</p>
+                        <ul>
+                            <li>Dietary logs</li>
+                            <li>Biometric status (e.g., Morning Status)</li>
+                            <li>Kegel training duration and frequency</li>
+                            <li>AI-generated insights</li>
+                        </ul>
+                        <p>...is stored locally on your device. This data is not synchronized to any cloud service owned or operated by Vitality 74.</p>
+                        <div class="tech-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
 
-                <h2>2. How We Use Your Information</h2>
-                <p>We use the collected information to:</p>
-                <ul>
-                    <li>Provide personalized training recommendations</li>
-                    <li>Track your progress and display statistics</li>
-                    <li>Send notifications and reminders (if enabled)</li>
-                    <li>Improve the App's functionality and user experience</li>
-                    <li>Generate anonymous, aggregated analytics</li>
-                </ul>
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">2</span>
+                            <span class="accordion-title">On-Device Intelligence (AI)</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Our "Bio-Analytics" features use <strong>Edge Computing</strong>.</p>
+                        <p>When the app analyzes correlations (e.g., comparing Zinc intake to recovery trends), this calculation is performed by your phone's CPU using local JavaScript libraries.</p>
+                        <p><strong>No data is transmitted</strong> to third-party AI APIs (such as OpenAI or Google Cloud) for analysis. All intelligence runs in your pocket.</p>
+                    </div>
+                </div>
 
-                <h2>3. Data Storage and Security</h2>
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">3</span>
+                            <span class="accordion-title">Third-Party Services</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We minimize third-party integrations to the absolute essentials required for app functionality:</p>
 
-                <h3>3.1 Local Storage</h3>
-                <p>
-                    <strong>All personal health and training data is stored locally on your device.</strong>
-                    We do not upload your personal training data, performance logs, or health information
-                    to external servers. Your journey is private and stays on your device.
-                </p>
+                        <div class="third-party-item">
+                            <h4>RevenueCat</h4>
+                            <p><strong>Purpose:</strong> Used to process subscriptions and the "Lifetime Unlock" purchase.</p>
+                            <p><strong>Data Shared:</strong> An anonymous App User ID (random string) and purchase status.</p>
+                            <p><strong>Why:</strong> To verify you have paid for the Pro features.</p>
+                        </div>
 
-                <h3>3.2 Security Measures</h3>
-                <p>We implement appropriate technical measures to protect your data, including:</p>
-                <ul>
-                    <li>Local data encryption using device-level security</li>
-                    <li>No cloud storage of personal health data</li>
-                    <li>No user accounts or authentication required</li>
-                </ul>
+                        <div class="third-party-item">
+                            <h4>Google Play Services / Apple StoreKit</h4>
+                            <p><strong>Purpose:</strong> Used for the actual financial transaction.</p>
+                            <p><strong>Data Shared:</strong> Financial data is handled entirely by Apple/Google. We never see your payment method, credit card details, or billing address.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <h2>4. Data Sharing</h2>
-                <p>We do not sell, trade, or rent your personal information to third parties.</p>
-                <p>We may share anonymous, aggregated data for:</p>
-                <ul>
-                    <li>Analytics and app improvement</li>
-                    <li>Research purposes (fully anonymized)</li>
-                </ul>
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">4</span>
+                            <span class="accordion-title">Data Deletion (The "Panic Button")</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>You have the <strong>absolute right to erasure</strong>. Because your data is local, you do not need to request us to delete it. You can destroy it instantly:</p>
 
-                <h2>5. Third-Party Services</h2>
-                <p>The App may use the following third-party services:</p>
-                <ul>
-                    <li><strong>Expo/React Native:</strong> App framework and push notifications</li>
-                    <li><strong>Analytics services:</strong> Anonymous usage statistics only</li>
-                </ul>
-                <p>These services have their own privacy policies governing data they collect.</p>
+                        <div class="deletion-option">
+                            <div class="option-header">
+                                <span class="option-number">1</span>
+                                <span>In-App Deletion</span>
+                            </div>
+                            <p>Go to <code>Settings &gt; Storage &gt; Tap "Nuke All Data"</code></p>
+                            <p>This overwrites the database and deletes the encryption key from your SecureStore.</p>
+                        </div>
 
-                <h2>6. Your Rights</h2>
-                <p>You have the right to:</p>
-                <ul>
-                    <li><strong>Access:</strong> View all data stored by the App</li>
-                    <li><strong>Delete:</strong> Remove all your data by uninstalling the App or using the "Clear Data" option in Settings</li>
-                    <li><strong>Opt-out:</strong> Disable notifications and reminders at any time</li>
-                    <li><strong>Export:</strong> Request a copy of your data</li>
-                </ul>
+                        <div class="deletion-option">
+                            <div class="option-header">
+                                <span class="option-number">2</span>
+                                <span>App Deletion</span>
+                            </div>
+                            <p>Uninstalling the app from your operating system permanently removes the local database file.</p>
+                            <p class="warning-text"><strong>This action cannot be undone.</strong></p>
+                        </div>
+                    </div>
+                </div>
 
-                <h2>7. Children's Privacy</h2>
-                <p>
-                    Vitality74 is intended for users 18 years of age and older. We do not knowingly
-                    collect information from children under 18. If you believe a child has provided
-                    us with personal information, please contact us.
-                </p>
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">5</span>
+                            <span class="accordion-title">Backups</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Because we do not sync your data, <strong>we cannot restore your data if you lose your phone.</strong></p>
+                        <p>If you use Apple iCloud Backup or Google Drive Backup for your <em>entire device</em>, your encrypted database file may be included in that backup. This is managed by your OS settings, not by Vitality 74.</p>
+                        <p>The backup file remains encrypted and requires your device's Secure Enclave key to decrypt.</p>
+                    </div>
+                </div>
 
-                <h2>8. Changes to This Policy</h2>
-                <p>
-                    We may update this Privacy Policy from time to time. We will notify you of any
-                    changes by posting the new Privacy Policy on this page and updating the
-                    "Last updated" date.
-                </p>
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">6</span>
+                            <span class="accordion-title">Children's Privacy</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Vitality 74 is intended for users <strong>18 years of age and older</strong>.</p>
+                        <p>We do not knowingly collect information from children under 18. Since all data is stored locally on the user's device, we have no mechanism to identify or access data from any user, regardless of age.</p>
+                    </div>
+                </div>
 
-                <h2>9. Contact Us</h2>
-                <p>
-                    If you have questions about this Privacy Policy or our privacy practices,
-                    please contact us at:
-                </p>
-                <ul>
-                    <li>Email: <a href="mailto:privacy@vitality74.app">privacy@vitality74.app</a></li>
-                    <li>Support: <a href="support.html">Visit our Support page</a></li>
-                </ul>
+                <div class="legal-accordion">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <div class="accordion-header">
+                            <span class="accordion-number">7</span>
+                            <span class="accordion-title">International Users & GDPR</span>
+                        </div>
+                        <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>For users in the European Economic Area (EEA), we comply with GDPR requirements <strong>by design</strong> through our local-only data storage approach.</p>
+                        <ul>
+                            <li><strong>Data Minimization:</strong> We collect no personal data on our servers.</li>
+                            <li><strong>Right to Erasure:</strong> You can delete all data instantly via app settings.</li>
+                            <li><strong>Data Portability:</strong> Your data exists only on your device and can be deleted at any time.</li>
+                            <li><strong>No Cross-Border Transfers:</strong> Your data never leaves your device to be transferred anywhere.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <h2>10. California Privacy Rights</h2>
-                <p>
-                    If you are a California resident, you have specific rights under the California
-                    Consumer Privacy Act (CCPA). Since we store all data locally on your device and
-                    do not sell personal information, most CCPA provisions do not apply. However,
-                    you may still contact us with any privacy-related questions.
-                </p>
+            <!-- Transparency Report -->
+            <div class="transparency-report">
+                <div class="report-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                    <h2>Transparency Report</h2>
+                </div>
+                <div class="report-grid">
+                    <div class="report-stat">
+                        <span class="report-number">0</span>
+                        <span class="report-label">Government Data Requests (All Time)</span>
+                    </div>
+                    <div class="report-stat">
+                        <span class="report-number">0</span>
+                        <span class="report-label">Data Disclosed</span>
+                    </div>
+                </div>
+                <p class="report-note">Since we do not possess user data, we cannot comply with subpoenas for user records.</p>
+            </div>
 
-                <h2>11. International Users</h2>
-                <p>
-                    If you are accessing the App from outside the United States, please be aware
-                    that your data remains on your device and is not transferred internationally.
-                    For users in the European Economic Area (EEA), we comply with GDPR requirements
-                    by design through our local-only data storage approach.
-                </p>
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2>Contact Us</h2>
+                <p>For questions regarding the security of your local data, contact:</p>
+                <a href="mailto:privacy@vitality74.app" class="contact-email">privacy@vitality74.app</a>
             </div>
         </div>
     </section>
@@ -162,41 +318,52 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-content">
                 <div class="footer-brand">
                     <a href="/" class="logo">
-                        <span class="logo-icon">V</span>
-                        <span class="logo-text">Vitality74</span>
+                        <div class="logo-mark">
+                            <span class="logo-number">74</span>
+                        </div>
+                        <span class="logo-text">VITALITY</span>
                     </a>
-                    <p>Science-backed training for men's performance and stamina.</p>
+                    <p class="footer-tagline">Physiological Performance Utility</p>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="index.html#features">Features</a>
-                        <a href="index.html#how-it-works">How It Works</a>
-                        <a href="index.html#download">Download</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="support.html">Help Center</a>
-                        <a href="support.html#contact">Contact Us</a>
-                        <a href="support.html#faq">FAQ</a>
-                    </div>
+                    <a href="index.html#science">Science</a>
+                    <a href="index.html#protocol">Protocol</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="support.html">Support</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Vitality74. All rights reserved.</p>
+                <p>2025 Vitality 74. All rights reserved.</p>
                 <p class="footer-disclaimer">This app is for educational and wellness purposes only. Consult a healthcare provider for medical advice.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Privacy page accordion functionality
+        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const accordion = trigger.parentElement;
+                const isOpen = accordion.classList.contains('open');
+
+                // Close all accordions
+                document.querySelectorAll('.legal-accordion').forEach(acc => {
+                    acc.classList.remove('open');
+                    acc.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+                });
+
+                // Open clicked one if it was closed
+                if (!isOpen) {
+                    accordion.classList.add('open');
+                    trigger.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
